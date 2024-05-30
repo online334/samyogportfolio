@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3 bg-dark text-white">
+        <div id="menuToggle" class="d-md-none">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="profile-header d-flex align-items-center">
+            <img src="samyog.jpg" alt="Samyog Kandangwa" class="rounded-circle mr-3" width="100" height="10 0">
+            <span class="profile-header-name">Samyog Kandangwa</span>
+        </div>
+    </header>
+    <div id="sidebar" class="bg-dark text-white p-3 d-md-block">
+        <div class="profile-image-container mb-3 text-center">
+        
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a href="#home" class="nav-link text-white">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link text-white">About</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link text-white">Projects</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
+        </ul>
+    </li>
+    </div>
+   
+    <section id="home" class="container my-5">
+        <div class="row">
+        <div class="col-12 col-md-4mb-3">
+            <img src="pong.png" class="img-fluid" alt="intro">
+            <br>
+            <br>
+            <a href="#contact" class="btn btn-primary">Explore</a>
+        </div>
+        </div>
+    </section>
+    <section id="about" class="container my-5">
+        <h2>About Me</h2>
+        <p class="lead">👋 I am a passionate and dedicated Front-End Developer with a strong background in creating engaging and user-friendly web applications. With a keen eye for design and a solid understanding of user experience principles, I specialize in translating complex requirements into intuitive and aesthetically pleasing interfaces. My expertise lies in utilizing modern web technologies to build responsive, performance, and accessible websites and applications. If you want to have collaboration, wanna build an amazing website for your organization, business, or personal use, feel free to contact me. Have questions or want to get in touch? Fill out the form below to send me messages.</p>
+        <h6>My skills</h6>
+        <div class="row">
+            <div class="col-sm-6 col-md-3"><button type="button" class="btn btn-outline-primary btn-block mb-2">HTML5</button></div>
+            <div class="col-sm-6 col-md-3"><button type="button" class="btn btn-outline-primary btn-block mb-2">CSS</button></div>
+            <div class="col-sm-6 col-md-3"><button type="button" class="btn btn-outline-primary btn-block mb-2">JavaScript</button></div>
+            <div class="col-sm-6 col-md-3"><button type="button" class="btn btn-outline-primary btn-block mb-2">React.js</button></div>
+            <div class="col-sm-6 col-md-3"><button type="button" class="btn btn-outline-primary btn-block mb-2">Angular.js</button></div>
+            <div class="col-sm-6 col-md-3"><button type="button" class="btn btn-outline-primary btn-block mb-2">Git</button></div>
+            <div class="col-sm-6 col-md-3"><button type="button" class="btn btn-outline-primary btn-block mb-2">GitHub</button></div>
+            <div class="col-sm-6 col-md-3"><button type="button" class="btn btn-outline-primary btn-block mb-2">Responsive Design</button></div>
+            <div class="col-sm-6 col-md-3"><button type="button" class="btn btn-outline-primary btn-block mb-2">Bootstrap</button></div>
+            <div class="col-sm-6 col-md-3"><button type="button" class="btn btn-outline-primary btn-block mb-2">Tailwind CSS</button></div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="resume.pdf.pdf" class="btn btn-success" download><i class="fa fa-download"></i> Download Resume</a>
+        </div>
+    </section>
+    <section id="projects" class="container my-5">
+        <h2>Projects Demo</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="project-item">
+                    <h3>Archs</h3>
+                    <p>Designed and developed an intuitive and visually appealing website for an interior design...</p>
+                    <img src="interior.jpg" class="img-fluid" alt="Interior Design Project">
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="project-item">
+                    <h3>Kusina</h3>
+                    <p>Designed and developed a user-friendly website for Kusina Food...</p>
+                    <img src="kusina.jpg" class="img-fluid" alt="Kusina Food Project">
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="project-item">
+                    <h3>Rolast</h3>
+                    <p>Developed a comprehensive and user-friendly website for Rolast, a platform for buying houses...</p>
+                    <img src="property.jpg" class="img-fluid" alt="Rolast Property Project">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container my-5">
+        <h4>Contact Me</h4>
+        <form id="contactForm" class="needs-validation" novalidate>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </section>
+    <footer class="bg-dark text-white text-center p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#about" class="text-white">About</a></li>
+                        <li><a href="#projects" class="text-white">Projects</a></li>
+                        <li><a href="#contact" class="text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <p><i class="fas fa-envelope"></i> samyoglimbu22@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 01037530444</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Social Media</h5>
+                    <a href="https://www.facebook.com/profile.php?id=100076746516490" class="text-white" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="https://www.twitter.com/yourprofile" class="text-white" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="https://www.linkedin.com/in/yourprofile" class="text-white" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+            <div class="mt-3">
+                <p>&copy; 2024 Samyog Kandangwa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+   
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.css"></script>
+
+        <script src="test.js"></script>
